@@ -48,7 +48,7 @@ export class PlacesService {
 
     this.placesApi.get<IPlacesResponse>(`/${query}.json`, {
       params: {
-        proximity: this.geoLocation.join(',')
+        proximity: this.geoLocation.join(',') 
       }
     })
     .subscribe(resp => {
